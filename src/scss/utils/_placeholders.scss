@@ -1,0 +1,25 @@
+///////////////// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+///////////////// For pseudo-elements
+
+%pseudos {
+  display: block;
+  content: ''; 
+  position: absolute;
+}
+
+///////////////// Layout
+
+%container {
+  width: 100%;
+  @extend %clearfix;
+}
+
